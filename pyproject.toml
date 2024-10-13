@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "zeno"
+version = "0.1.0"
+description = "Commandline frontend for the dnf package manager"
+authors = ["Sandipan Biswas <sandipanb223@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rich = "^13.9.2"
+typer = "^0.12.5"
+
+[tool.poetry.scripts]
+zeno = "zeno.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

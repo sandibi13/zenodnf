@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+*.log
+*.sqlite3
+
+# Poetry
+poetry.lock
+.cache/
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# macOS specific
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# PyCharm specific
+.idea/
+
+# Byte-compiled Python / Distribution / Installer files
+*.whl
+*.egg
+*.zip
+*.tar.gz
+*.dist-info/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+
+# Files generated during builds
+build/
+dist/
+
+# Other temporary files
+*.bak
+*.swp
+*.swo
