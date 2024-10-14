@@ -1,6 +1,8 @@
 # Zeno
 
-Zeno is a modern and fast package manager built on top of `libdnf`, designed to bring speed and aesthetic improvements over traditional package managers like `dnf`. With a focus on user experience, Zeno provides a streamlined and feature-rich command-line interface to handle software installation, removal, updates, and more. **Please note that this project is still under development, and contributions are highly appreciated!**
+Zeno is a modern and fast package manager built on top of `libdnf`, designed to bring speed and aesthetic improvements over traditional package managers like `dnf`. With a focus on user experience, Zeno provides a streamlined and feature-rich command-line interface to handle software installation, removal, updates, and more.
+
+**Please note that this project is still under development, and contributions are highly appreciated!**
 
 ## Installation
 
