@@ -1,0 +1,79 @@
+[MASTER]
+# A comma-separated list of package or module names from where C extensions may be loaded.
+extension-pkg-whitelist=
+
+# Load plugins, if any
+load-plugins=
+
+# Specifies a configuration file.
+rcfile=
+
+# Python code to be executed, such as variable definitions or import statements
+init-hook=
+
+# Path to look for imported files and modules
+init-import=
+
+[MESSAGES CONTROL]
+# Disable the following checks:
+# C0114: Missing module docstring
+# C0116: Missing function or method docstring
+# W0703: Catching too general exception (for catching base `Exception` classes in CLI tools)
+disable=C0114,C0116,W0703
+
+# Enable any specific checks you might want
+enable=
+
+[REPORTS]
+# Disable the final report, which is usually unnecessary
+reports=no
+
+[FORMAT]
+
+# Maximum number of characters on a single line.
+max-line-length=88
+
+# Allow single-character variable names but limit them to 'i', 'j', 'k', 'x', 'y', and 'z'
+good-names=i,j,k,x,y,z
+
+# Allow argument names like 'e' (useful for exception variables)
+good-names=e
+
+# Regular expression matching correct method argument names
+method-rgx=[a-z_][a-z0-9_]{2,30}$
+
+# Regular expression matching correct function names
+function-rgx=[a-z_][a-z0-9_]{2,30}$
+
+# Regular expression matching correct variable names
+variable-rgx=[a-z_][a-z0-9_]{2,30}$
+
+[DESIGN]
+# Maximum number of arguments for function or method.
+max-args=6
+
+# Maximum number of attributes for a class (too many attributes can indicate poor class design)
+max-attributes=10
+
+# Maximum number of locals in a function/method (limit complexity).
+max-locals=15
+
+# Minimum number of public methods for a class (too few could mean it shouldn't be a class).
+min-public-methods=1
+
+[EXCEPTIONS]
+# Exceptions that will be ignored when encountered
+overgeneral-exceptions=Exception
+
+[BASIC]
+
+# Variable names that should be considered as constants
+const-rgx=(([A-Z_][A-Z0-9_]*)|(__.*__))$
+
+# Regex to identify if a name is a method. 
+method-rgx=[a-z_][a-z0-9_]{2,30}$
+
+[IMPORTS]
+# Allow imports of standard Python modules even if unused (such as `import os` in CLI apps)
+allow-wildcard-with-all=no
+allow-unused-imports=yes

@@ -1,35 +1,23 @@
 """The main module for Zeno."""
 
-import typer
+import sys
+import errno
 
-from zeno import operations, rich
-
-app = typer.Typer()
-
-
-@app.command()
-def install(package: str):
-    """Install a package."""
-    operations.install_package(package)
+from zeno.rich import console
+from zeno.zeno import app
 
 
-@app.command()
-def remove(package: str):
-    """Remove a package."""
-    operations.remove_package(package)
-
-
-@app.command()
-def search(query: str):
-    """Search for a package."""
-    operations.search_package(query)
-
-
-@app.command()
-def history():
-    """Show the transaction history."""
-    rich.print_history()
-
-
-if __name__ == "__main__":
-    app()
+def main() -> None:
+    """Zeno function to reference from the entry point."""
+    try:
+        app()
+    except KeyboardInterrupt:
+        console.print("\n[bold red]Exiting at your request.[/bold red]")
+        sys.exit(130)
+    except BrokenPipeError:
+        sys.stderr.close()
+    except OSError as error:
+        if error.errno == errno.ENOSPC:
+            console.print("[bold red]Error: No space left on device.[/bold red]")
+            sys.exit(1)
+        raise error from error

@@ -1,53 +1,39 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.pdb
-*.egg
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
-*.log
-*.sqlite3
+.installed.cfg
+*.egg
+MANIFEST
 
-# Poetry
-poetry.lock
-.cache/
+# pyenv
+.python-version
 
-# Virtual environment
-.venv/
+# Environments
+.env
+.venv
+env/
 venv/
 ENV/
-env/
+env.bak/
+venv.bak/
 
-# macOS specific
-.DS_Store
-
-# VSCode settings
+# Sandibi
+test*.py
 .vscode/
-
-# PyCharm specific
-.idea/
-
-# Byte-compiled Python / Distribution / Installer files
-*.whl
-*.egg
-*.zip
-*.tar.gz
-*.dist-info/
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-coverage.xml
-*.cover
-*.py,cover
-
-# Files generated during builds
-build/
-dist/
-
-# Other temporary files
-*.bak
-*.swp
-*.swo

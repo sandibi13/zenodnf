@@ -1,8 +1,8 @@
 # Zeno
 
-Zeno is a modern and fast package manager built on top of `libdnf`, designed to bring speed and aesthetic improvements over traditional package managers like `dnf`. With a focus on user experience, Zeno provides a streamlined and feature-rich command-line interface to handle software installation, removal, updates, and more.
+Zeno is a fast, modern package manager built on `libdnf`, offering speed and aesthetic improvements over `dnf`. It provides a streamlined, user-friendly command-line interface for software installation, removal, updates, and more.
 
-**Please note that this project is still under development, and contributions are highly appreciated!**
+_Please note that this project relies on `libdnf`, which is currently being rewritten and rapidly developed. As a result, certain functionality may or may not work as expected due to `libdnf`'s instability._
 
 ## Installation
 
@@ -22,7 +22,7 @@ poetry install
 
 ## Usage
 
-Here's how you can use some of the core commands
+Here's how you can use some of the core commands:
 
 ```bash
 # Install a package
