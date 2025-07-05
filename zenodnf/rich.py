@@ -1,4 +1,4 @@
-"""Rich options for Zeno output."""
+"""Rich options for ZenoDNF output."""
 
 from rich.console import Console
 from rich.table import Table

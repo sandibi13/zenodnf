@@ -1,6 +1,6 @@
-# Zeno
+# ZenoDNF
 
-Zeno is a fast, modern package manager built on `libdnf`, offering speed and aesthetic improvements over `dnf`. It provides a streamlined, user-friendly command-line interface for software installation, removal, updates, and more.
+ZenoDNF is a fast, modern package manager built on `libdnf`, offering speed and aesthetic improvements over `dnf`. It provides a streamlined, user-friendly command-line interface for software installation, removal, updates, and more.
 
 _Please note that this project relies on `libdnf`, which is currently being rewritten and rapidly developed. As a result, certain functionality may or may not work as expected due to `libdnf`'s instability._
 
@@ -10,14 +10,14 @@ Before installing, make sure you have Poetry installed to manage dependencies.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/zeno.git
-cd zeno
+git clone https://github.com/sandibi13/zenodnf.git
+cd zenodnf
 
 # Install dependencies using Poetry
 poetry install
 
 # Run the setup script
-./zeno-pyinstall.sh
+./zenodnf-pyinstall.sh
 ```
 
 ## Usage
@@ -26,19 +26,19 @@ Here's how you can use some of the core commands:
 
 ```bash
 # Install a package
-zeno install [package_name]
+zenodnf install [package_name]
 
 # Remove a package
-zeno remove [package_name]
+zenodnf remove [package_name]
 
 # Update all packages
-zeno update
+zenodnf update
 
 # Search for a package
-zeno search [query]
+zenodnf search [query]
 
 # View transaction history
-zeno history
+zenodnf history
 ```
 
 ## Features

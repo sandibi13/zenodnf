@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "zeno"
+name = "zenodnf"
 version = "0.2.0"
 description = "Commandline frontend for the dnf package manager"
 authors = ["Sandipan Biswas <sandipanb223@gmail.com>"]
@@ -16,7 +16,7 @@ black = "*"
 pylint = "*"
 
 [tool.poetry.scripts]
-zeno = "zeno.__main__:main"
+zenodnf = "zenodnf.__main__:main"
 
 [build-system]
 requires = ["poetry-core"]

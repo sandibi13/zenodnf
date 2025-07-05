@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Zeno package manager installation script
+# ZenoDNF package manager installation script
 
-echo "Starting the installation of Zeno..."
+echo "Starting the installation of ZenoDNF..."
 
 # Check if Poetry is installed
 if ! command -v poetry &> /dev/null
@@ -26,8 +26,8 @@ poetry install
 echo "Activating Poetry shell..."
 poetry shell
 
-echo "Zeno package manager installed and ready to use!"
+echo "ZenoDNF package manager installed and ready to use!"
 
 # Output helpful instructions for the user
-echo "To run the Zeno CLI, use the following command:"
-echo "    python zeno-cli.py [command]"
+echo "To run the ZenoDNF CLI, use the following command:"
+echo "    python zenodnf-cli.py [command]"

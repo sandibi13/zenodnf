@@ -1,14 +1,14 @@
-"""The main module for Zeno."""
+"""The main module for ZenoDNF."""
 
 import sys
 import errno
 
-from zeno.rich import console
-from zeno.zeno import app
+from zenodnf.rich import console
+from zenodnf.zenodnf import app
 
 
 def main() -> None:
-    """Zeno function to reference from the entry point."""
+    """ZenoDNF function to reference from the entry point."""
     try:
         app()
     except KeyboardInterrupt:

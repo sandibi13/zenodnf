@@ -1,10 +1,10 @@
-"""Main module for Zeno."""
+"""Main module for ZenoDNF."""
 
 import typer
 
-from zeno import __version__
-from zeno.rich import print_info
-from zeno.operations import (
+from zenodnf import __version__
+from zenodnf.rich import print_info
+from zenodnf.operations import (
     install_package,
     remove_package,
     update_packages,
@@ -17,14 +17,14 @@ from zeno.operations import (
 )
 
 # Initialize Typer app
-app = typer.Typer(help="Zeno: A blazing-fast package manager built on top of libdnf.")
+app = typer.Typer(help="ZenoDNF: A blazing-fast package manager built on top of libdnf.")
 
 
 # Version command
 @app.command()
 def version():
-    """Show Zeno version."""
-    print_info(f"Zeno version: {__version__}")
+    """Show ZenoDNF version."""
+    print_info(f"ZenoDNF version: {__version__}")
 
 
 # Install command

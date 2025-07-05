@@ -1,8 +1,8 @@
-"""Functions for the Zeno commands."""
+"""Functions for the ZenoDNF commands."""
 
 import libdnf
 
-from zeno.rich import (
+from zenodnf.rich import (
     print_success,
     print_error,
     print_info,
